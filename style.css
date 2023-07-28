@@ -1,0 +1,514 @@
+/* CONFIGURAÇÕES PADRÕES*/
+@import url('https://fonts.cdnfonts.com/css/garet');
+@import url('https://fonts.cdnfonts.com/css/telegrafico');
+@import url('https://fonts.cdnfonts.com/css/hk-groteks');
+@import url('https://fonts.cdnfonts.com/css/dm-sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+@media (min-height: 1000px) {
+    .fundo::after {
+        height: 100%;
+    }
+}
+
+:root {
+    --verde: #04D600;
+    --vermelho: ##EB1C24;
+    --preto: #000000;
+    --azul: #0094BB;
+    --bege: #E6DAD1;
+}
+
+body {
+    font-family: 'Garet', sans-serif;
+    background: rgb(34,34,34);
+    background: linear-gradient(to top, rgba(34,34,34,1) 0%, rgba(20,20,20,1) 0%, rgba(7,7,7,1) 100%);
+}
+
+.fundo{
+    background: linear-gradient(to right, #000000,#000000,rgba(0,0,0,0.3), rgba(0,0,0,0)), url(img/IMG01.png);
+    background-position: right;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    display: block;
+    padding: 0 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-right: 5px;
+    color: #ffff;
+    font-size: 19px;
+}
+header .logo  {
+    margin-left: 5px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+}
+
+header .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    margin-right: 80px;
+}
+
+.menu-link {
+    color: white; /* Cor original do link */
+    text-decoration: none; /* Remover sublinhado padrão */
+    position: relative; /* Necessário para posicionar o sublinhado */
+  }
+  
+  .menu-link::after {
+    content: ''; /* Cria um pseudo-elemento para o sublinhado */
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff; /* Cor do sublinhado */
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease; /* Transição suave para animação */
+  }
+  
+  .menu-link:hover::after {
+    width: 100%; /* Largura do sublinhado ao passar o mouse */
+  }
+
+/* SECTION 1*/
+main {
+    margin: 60px 50px 0 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: var(--bege);
+    font-size: 47px;
+}
+.title{
+    width: 771px;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 3px;
+    border-right: 5px solid;
+    animation: 
+    typing 2s, 
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing{
+    from{width: 0;}
+}
+
+.paragrafoSec1 {
+    color: var(--verde);
+    font-size: 13px;
+}
+
+.SaibaMais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-transform: uppercase;
+    padding: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    color: #ffff;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,7,1) 5%, rgba(0,73,187,1) 100%, rgba(2,0,36,1) 100%);
+    transition: all 0.2s ease;
+}
+.SaibaMais:active {
+    transform: scale(0.96);
+}
+.SaibaMais:hover {
+    box-shadow: 0 0 2px blue, 0 0 5px blue, 0 0 5px blue, 0 0 10px blue, 0 0 40px blue;
+}
+button span {
+    padding-left: 10px;
+}
+
+h3 {
+    color: var(--bege);
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px; 
+    margin-bottom: 20px;
+}
+
+.interesses p {
+    color: #ffff;
+    font-size: 10px;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.conteudo h3 {
+    text-transform: uppercase;
+}
+.textGreen {
+    color: var(--verde);
+}
+.textRed {
+   color: #ff0000;
+}
+.interesses {
+    background: linear-gradient( #333333, rgba(0,0,0,0));
+    display: flex;
+    width: 445px;
+    height: 350px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.imgGreen {
+    width: 35px;
+    float: left;
+    margin-right: 10px;
+}
+
+.informacoesGreen {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-bottom: 40px;
+}
+/* SECTION 2 */
+
+.positionTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleTech {
+    font-size: 23px;
+    text-transform: uppercase;
+    
+}
+
+.border {
+    border: 1px solid rgb(59, 56, 56);
+    width: 20em;
+}
+/* SECTION PRODUTOS */
+
+.Produto {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.cardProduto {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 45px;
+    padding: 30px;
+}
+
+.imgProduto {
+    width: 18em;
+}
+
+.titleProduto {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Telegrafico', sans-serif;
+    color: var(--verde);
+    margin-bottom: 8px;
+}
+
+.paragrafoProduto {
+    font-size: 12px;
+    color: #fff;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    font-family: 'Telegrafico', sans-serif;
+}
+
+.botaoProduto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        text-transform: uppercase;
+        /* margin: 10px 0; */
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        border-radius: 40px;
+        color: #ffff;
+        background: var(--azul);
+        transition: all 0.2s ease;
+}
+.botaoProduto:active {
+    transform: scale(0.96);
+}
+.botaoProduto:hover {
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 10px cyan, 0 0 20px cyan, 0 0 50px cyan;
+}
+
+.itensProdutos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+/* DEPOIMENTOS */
+#depoimentosTitle{
+    border-bottom: 5px;
+}
+.cardPessoa{
+    margin: 30px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.paragrafoBox{
+    height: 280px;
+    padding: 10px;
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(20,20,20,1) 45%, rgba(7,7,7,1) 100%);
+}
+.paragrafoDepoimento{
+    word-wrap: break-word;
+    padding: 8px;
+    text-align: left;
+    color: #E6DAD1;
+    font-size: 16px;
+    font-family: 'HK Grotesk', sans-serif;
+}
+
+.depoimetosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardPessoa img{
+    width: 100%;
+    height: 230px;
+}
+.depoimentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.paragrafoNome {
+    margin-top: 2px;
+    margin-left: 5px;
+    color: #E6DAD1;
+    font-family: 'HK Grotesk', sans-serif;
+                                                
+}
+/* SECTION BENEFICIOS */
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.beneficiosParagrafo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.paragrafoleft {
+    margin-left: 100px;
+}
+.paragrafoLeft1 {
+    padding-bottom: 130px;
+    margin-top: 60px;
+}
+.paragrafoLeft2 {
+    margin-left: 20px;
+}
+.imgBeneficios {
+    width: 200px;
+    height: 350px;
+    margin: 8px 200px;
+}
+
+.paragrafoRight {
+    margin-right: 100px;
+     margin-top: 110px;
+}
+.paragrafoRight1 {
+    padding-bottom: 80px;
+    margin-top: 40px;
+}
+/* CARD RODAPÉ */
+.cardRodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCompreAgora {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(20,20,20,1) 45%, rgba(7,7,7,1) 100%);
+    border-radius: 20px;
+    width: 700px;
+    height: 300px;
+}
+
+.cardCompreAgora p {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+.cardCompreAgora button {
+ margin: 50px;
+}
+.botaoFooter  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-transform: uppercase;
+    padding: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    color: #ffff;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,7,1) 5%, rgba(0,73,187,1) 100%, rgba(2,0,36,1) 100%);
+    transition: all 0.2s ease;
+}
+.botaoFooter:active {
+    transform: scale(0.96);
+}
+.botaoFooter:hover {
+    box-shadow: 0 0 2px blue, 0 0 5px blue, 0 0 5px blue, 0 0 10px blue, 0 0 40px blue;
+}
+.botaoWpp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-right: 20px;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    color: #ffff;
+    background: #000000;
+    border: 1px solid #fff;
+}
+
+.botaoWpp img {
+    width: 20px;
+    margin-right: 4px;
+    padding-top: 5px;
+}
+/* AREA SOBRE */
+.sobre p {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+.sobre h1 {
+    font-size: 30px;
+}
+#sobreFundo{
+   background-color: #000000;
+}
+#sobreFundo::before {
+    content: "";
+    background-image: linear-gradient(to top, rgba(0,0,0,0), #000000), url(img/Design\ sem\ nome.png);
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 450px;
+    position: absolute;
+    z-index: -1;
+}

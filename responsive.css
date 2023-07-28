@@ -1,0 +1,105 @@
+@media(max-width: 780px) {
+    .fundo{
+        background: url(img/IMG01.png);
+        background-position: right;
+        background-size: cover;
+    }
+   .cabecalho {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   }
+   .navegacao {
+       margin-left: 80px;
+       margin-top: 10px;
+       display: flex;
+   }
+   .title {
+    font-size: 14px;
+   }
+   .conteudo {
+    display: flex;
+   }
+   .interesses {
+    width: 280px;
+    height: 450px;
+    margin-bottom: 15px;
+   }
+   .imgGreen {
+    margin-right: 10px;
+   }
+   .titleTech {
+    font-size: 12px;
+   }
+   .border {
+    width: 10em;
+   }
+   .Produto {
+    display: flex;
+    flex-direction: column;
+   }
+   .card {
+    display: flex;
+    flex-direction: column;
+   }
+   .depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .beneficios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+   .beneficiosParagrafo {
+    font-size: 10px;
+   }
+   .paragrafoleft {
+    margin: auto;
+    padding: auto;
+}
+.paragrafoLeft1 {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+.paragrafoLeft2 {
+    padding-left: auto;
+    padding-top: 80px;
+}
+.imgBeneficios {
+    width: 150px;
+    height: 300px;
+    margin: auto;
+}
+
+.paragrafoRight {
+    margin: auto;
+    margin-right: auto;
+}
+.paragrafoRight1 {
+    margin-top: 80px;
+}
+.cardCompreAgora {
+    width: 350px;
+}
+}
+
+@media (max-width: 360px) {
+    .imgBeneficios {
+        width: 150px;
+        height: 300px;
+        margin: 1px 25px 1px 0;
+    }
+    .paragrafoLeft1 {
+        padding-bottom: 0px;
+        margin-top: 20px;
+        margin-left: 10px;
+    
+    }
+    .paragrafoRight {
+        margin: auto;
+        margin-right: 10px;
+    }
+}
